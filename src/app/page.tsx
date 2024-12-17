@@ -1,4 +1,3 @@
-import GradientText from "@/components/commons/GradientText"
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
