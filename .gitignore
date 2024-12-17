@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Node.js dependencies
 /node_modules/
 
@@ -36,6 +37,8 @@ Thumbs.db          # Windows specific
 # Keys
 .keys
 =======
+=======
+>>>>>>> 038f60cb34eb69b647f31a9c780cf2f4a2bebcaa
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -79,5 +82,9 @@ yarn-error.log*
 next-env.d.ts
 
 # Keys
+<<<<<<< HEAD
 .keys
 >>>>>>> 038f60c (Initial commit)
+=======
+.keys
+>>>>>>> 038f60cb34eb69b647f31a9c780cf2f4a2bebcaa
