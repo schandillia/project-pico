@@ -1,0 +1,36 @@
+# Node.js dependencies
+/node_modules/
+
+# Python virtual environments
+/.venv/
+/venv/
+
+# Build directories
+/dist/
+/build/
+
+# Logs
+*.log
+
+# System files
+.DS_Store          # macOS specific
+Thumbs.db          # Windows specific
+
+# IDE and Editor files
+/.idea/            # JetBrains IDEs
+.vscode/           # VSCode settings
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+*.swp              # Vim temporary files
+*.bak              # Backup files
+
+# Environment files
+.env               # Environment configuration files (e.g., API keys, passwords)
+.env.local
+.env.production
+.env.development
+
+# Keys
+.keys
