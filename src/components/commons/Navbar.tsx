@@ -2,6 +2,7 @@ import Link from "next/link"
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import { FaXTwitter } from "react-icons/fa6"
+import brand from "@/constants/brand.json"
 
 const Navbar = () => {
 	const brandName = process.env.BRAND
@@ -10,7 +11,7 @@ const Navbar = () => {
 			<MaxWidthWrapper>
 				<div className="flex h-14 items-center justify-between border-b border-zinc-200">
 					<Link href="/" className="flex z-40 font-semibold">
-						<span>{brandName}</span>
+						<span>{brand.BRAND}</span>
 					</Link>
 
 					{/* TODO: Add mobile navbar */}

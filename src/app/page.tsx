@@ -4,9 +4,9 @@ import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { FaXTwitter } from "react-icons/fa6"
+import brand from "@/constants/brand.json"
 
 export default function Home() {
-	const brandName = process.env.BRAND
 	return (
 		<>
 			<MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
@@ -15,7 +15,7 @@ export default function Home() {
 					jiffy!
 				</h1>
 				<p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
-					{brandName} takes the grind out of your thread creation
+					{brand.BRAND} takes the grind out of your thread creation
 					process, so you could focus on elevating your content and
 					reach instead.
 				</p>
