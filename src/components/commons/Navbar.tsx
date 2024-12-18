@@ -5,6 +5,17 @@ import brand from "@/constants/brand.json"
 import SignIn from "@/components/sign-in"
 import UserAccountNav from "@/components/commons/UserAccountNav"
 
+// Define a type for the user object
+type User = {
+	name: string
+	image?: string
+}
+
+// Define a type for the session prop
+type Session = {
+	user?: User
+}
+
 const Navbar = ({ session }: { session: any }) => {
 	const user = session?.user
 	return (

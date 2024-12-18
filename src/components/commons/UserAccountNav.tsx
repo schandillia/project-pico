@@ -7,7 +7,6 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 // import initials from "@/lib/initials"
 import { User } from "lucide-react"
@@ -20,9 +19,6 @@ interface UserAccountNavProps {
 }
 
 function UserAccountNav({ image, name }: UserAccountNavProps) {
-	let displayName
-	displayName = name
-
 	const menuItems = [
 		{ label: "Dashboard", href: "/dashboard" },
 		{ label: "Server", href: "/server" },
