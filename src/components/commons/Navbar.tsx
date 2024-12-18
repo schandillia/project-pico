@@ -11,11 +11,6 @@ type User = {
 	image?: string
 }
 
-// Define a type for the session prop
-type Session = {
-	user?: User
-}
-
 const Navbar = ({ session }: { session: any }) => {
 	const user = session?.user
 	return (
