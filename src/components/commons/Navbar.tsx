@@ -18,11 +18,28 @@ const Navbar = () => {
 							<Link
 								href="/pricing"
 								className={buttonVariants({
-									variant: "ghost",
+									variant: "link",
+									size: "sm",
+								})}
+							>
+								Discover
+							</Link>
+							<Link
+								href="/pricing"
+								className={buttonVariants({
+									variant: "link",
 									size: "sm",
 								})}
 							>
 								Pricing
+							</Link>
+							<Link
+								href="/pricing"
+								className={buttonVariants({
+									size: "sm",
+								})}
+							>
+								Sign in with your X
 							</Link>
 						</>
 					</div>
