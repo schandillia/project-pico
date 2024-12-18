@@ -1,11 +1,10 @@
 import Link from "next/link"
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
-import { FaXTwitter } from "react-icons/fa6"
 import brand from "@/constants/brand.json"
-import SignIn from "../sign-in"
+import SignIn from "@/components/sign-in"
 
-const Navbar = () => {
+const Navbar = ({ session }: { session: any }) => {
 	return (
 		<nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
 			<MaxWidthWrapper>
@@ -36,7 +35,12 @@ const Navbar = () => {
 							>
 								Pricing
 							</Link>
-							<SignIn />
+							{/* Show session data */}
+							{session ? (
+								<p>Logged in as {session.user?.name}</p>
+							) : (
+								<SignIn />
+							)}
 						</>
 					</div>
 				</div>
