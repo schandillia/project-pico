@@ -3,6 +3,7 @@ import { buttonVariants } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { FaXTwitter } from "react-icons/fa6"
 
 export default function Home() {
 	const brandName = process.env.BRAND
@@ -95,7 +96,8 @@ export default function Home() {
 								Step 1
 							</span>
 							<span className="text-xl font-semibold">
-								Sign up with your X
+								Sign in with your{" "}
+								<FaXTwitter className="inline align-middle relative top-[-2px]" />
 							</span>
 							<span className="mt-2 text-zinc-700">
 								Get started with a free, no-frills plan and

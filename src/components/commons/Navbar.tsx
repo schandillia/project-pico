@@ -1,6 +1,7 @@
 import Link from "next/link"
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
+import { FaXTwitter } from "react-icons/fa6"
 
 const Navbar = () => {
 	const brandName = process.env.BRAND
@@ -39,7 +40,7 @@ const Navbar = () => {
 									size: "sm",
 								})}
 							>
-								Sign in with X
+								Sign in with <FaXTwitter />
 							</Link>
 						</>
 					</div>
