@@ -49,7 +49,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
 								<SignIn />
 							) : (
 								<UserAccountNav
-									name={user.name}
+									name={user.name ?? ""}
 									image={user.image ?? ""}
 								/>
 							)}
