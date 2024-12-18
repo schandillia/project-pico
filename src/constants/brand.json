@@ -1,5 +1,6 @@
 {
-  "BRAND": "Pico", 
+  "BRAND": "Pico",
+  "DESCRIPTION": "Supercharge your X threads with intuitive tools and AI enhancements for creativity and efficiency.",
   "TAGLINE": "Your Catchy Tagline",
   "DEFAULT_LOCALE": "en-US",
   "SUPPORTED_LANGUAGES": ["en-US", "es-ES", "fr-FR"],

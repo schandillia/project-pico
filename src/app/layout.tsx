@@ -3,15 +3,13 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
 import Navbar from "@/components/commons/Navbar"
+import brand from "@/constants/brand.json"
 
 const inter = Inter({ subsets: ["latin"] })
 
-const brandName = process.env.BRAND
-
 export const metadata: Metadata = {
-	title: brandName,
-	description:
-		"Supercharge your X threads with intuitive tools and AI enhancements for creativity and efficiency.",
+	title: brand.BRAND,
+	description: brand.DESCRIPTION,
 }
 
 export default async function RootLayout({
