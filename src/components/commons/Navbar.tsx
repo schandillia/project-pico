@@ -3,6 +3,7 @@ import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import { FaXTwitter } from "react-icons/fa6"
 import brand from "@/constants/brand.json"
+import SignIn from "../sign-in"
 
 const Navbar = () => {
 	return (
@@ -35,14 +36,7 @@ const Navbar = () => {
 							>
 								Pricing
 							</Link>
-							<Link
-								href="/pricing"
-								className={buttonVariants({
-									size: "sm",
-								})}
-							>
-								Sign in with <FaXTwitter />
-							</Link>
+							<SignIn />
 						</>
 					</div>
 				</div>
