@@ -3,8 +3,10 @@ import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import brand from "@/constants/brand.json"
 import SignIn from "@/components/sign-in"
+import UserAccountNav from "@/components/commons/UserAccountNav"
 
 const Navbar = ({ session }: { session: any }) => {
+	const user = session?.user
 	return (
 		<nav className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 bg-white/75 backdrop-blur-lg transition-all">
 			<MaxWidthWrapper>
@@ -18,7 +20,7 @@ const Navbar = ({ session }: { session: any }) => {
 					<div className="hidden items-center space-x-4 sm:flex">
 						<>
 							<Link
-								href="/pricing"
+								href="/discover"
 								className={buttonVariants({
 									variant: "link",
 									size: "sm",
@@ -35,11 +37,13 @@ const Navbar = ({ session }: { session: any }) => {
 							>
 								Pricing
 							</Link>
-							{/* Show session data */}
-							{session ? (
-								<p>Logged in as {session.user?.name}</p>
-							) : (
+							{!user ? (
 								<SignIn />
+							) : (
+								<UserAccountNav
+									name={user.name}
+									image={user.image ?? ""}
+								/>
 							)}
 						</>
 					</div>

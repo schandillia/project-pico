@@ -1,7 +1,7 @@
-export default function AboutPage() {
+export default function page() {
 	return (
 		<div>
-			<h1>About Us</h1>
+			<h1>Discover</h1>
 			<p>Welcome to the About page of our application.</p>
 		</div>
 	)
