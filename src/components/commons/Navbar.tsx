@@ -39,7 +39,7 @@ const Navbar = () => {
 									size: "sm",
 								})}
 							>
-								Sign in with your X
+								Sign in with X
 							</Link>
 						</>
 					</div>
