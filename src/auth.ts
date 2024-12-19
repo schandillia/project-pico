@@ -10,7 +10,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
 
 	callbacks: {
 		// Callback function to log the session object after authentication
-		async session({ session, token }) {
+		async session({ session }) {
 			console.log("Twitter session object:", session) // Log the session object
 			return session
 		},
