@@ -6,6 +6,7 @@ import Navbar from "@/components/commons/Navbar"
 import brand from "@/constants/brand.json"
 import { auth } from "@/auth"
 import { SessionProvider } from "next-auth/react"
+import { ThemeProvider } from "@/components/theme/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -21,7 +22,7 @@ export default async function RootLayout({
 }) {
 	const session = await auth()
 	return (
-		<html lang="en" className="light">
+		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
 					"min-h-screen font-sans antialiased",
@@ -29,8 +30,15 @@ export default async function RootLayout({
 				)}
 			>
 				<SessionProvider session={session}>
-					<Navbar session={session} />
-					{children}
+					<ThemeProvider
+						attribute="class"
+						defaultTheme="system"
+						enableSystem
+						disableTransitionOnChange
+					>
+						<Navbar session={session} />
+						{children}
+					</ThemeProvider>
 				</SessionProvider>
 			</body>
 		</html>

@@ -11,10 +11,10 @@ export default function Home() {
 		<>
 			<MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
 				<h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
-					Craft <span className="text-primary">threads</span> in a
+					Create <span className="text-primary">threads</span> in a
 					jiffy!
 				</h1>
-				<p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
+				<p className="mt-5 max-w-prose text-zinc-700 dark:text-zinc-400 sm:text-lg">
 					{brand.BRAND} takes the grind out of your thread creation
 					process, so you could focus on elevating your content and
 					reach instead.
@@ -22,7 +22,7 @@ export default function Home() {
 				<Link
 					className={buttonVariants({
 						size: "lg",
-						className: "mt-5",
+						className: "mt-5 dark:text-white",
 					})}
 					href="/dashboard"
 				>
@@ -47,7 +47,7 @@ export default function Home() {
 					<div>
 						<div className="mx-auto max-w-6xl px-6 lg:px-8">
 							<div className="mt-16 flow-root sm:mt-24">
-								<div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+								<div className="-m-2 rounded-xl bg-gray-900/5 dark:bg-gray-500/15 p-2 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-400/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 									<Image
 										src="/dashboard-preview.jpg"
 										alt="product preview"
@@ -78,11 +78,11 @@ export default function Home() {
 			<div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
 				<div className="mb-12 px-6 lg:px-8">
 					<div className="mx-auto max-w-2xl sm:text-center">
-						<h2 className="mt-2 font-bold text-4xl text-gray-900 sm:text-5xl">
+						<h2 className="mt-2 font-bold text-4xl text-gray-900 dark:text-gray-200 sm:text-5xl">
 							Start creating right away
 						</h2>
 
-						<p className="mt-4 text-lg text-gray-600">
+						<p className="mt-4 text-lg text-gray-600 dark:text-zinc-400">
 							Creating, publishing, and managing X threads has
 							never been easier
 						</p>
@@ -99,7 +99,7 @@ export default function Home() {
 								Sign in with your{" "}
 								<FaXTwitter className="inline align-middle relative top-[-2px]" />
 							</span>
-							<span className="mt-2 text-zinc-700">
+							<span className="mt-2 text-zinc-700 dark:text-zinc-400">
 								Get started with a free, no-frills plan and
 								start creating.
 							</span>
@@ -113,7 +113,7 @@ export default function Home() {
 							<span className="text-xl font-semibold">
 								Draft your first thread
 							</span>
-							<span className="mt-2 text-zinc-700">
+							<span className="mt-2 text-zinc-700 dark:text-zinc-400">
 								Use AI to fix grammar, polish style, or even
 								generate content ideas.
 							</span>
@@ -127,7 +127,7 @@ export default function Home() {
 							<span className="text-xl font-semibold">
 								Publish with a single click
 							</span>
-							<span className="mt-2 text-zinc-700">
+							<span className="mt-2 text-zinc-700 dark:text-zinc-400">
 								Or save draft for further review, or schedule to
 								post later.
 							</span>
@@ -136,7 +136,7 @@ export default function Home() {
 				</ol>
 				<div className="mx-auto max-w-6xl px-6 lg:px-8">
 					<div className="mt-16 flow-root sm:mt-24">
-						<div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+						<div className="-m-2 rounded-xl bg-gray-900/5 dark:bg-gray-500/15 p-2 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-400/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 							<Image
 								src="/file-upload-preview.jpg"
 								alt="uploading preview"
