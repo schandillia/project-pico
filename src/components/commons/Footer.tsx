@@ -2,6 +2,7 @@ import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import Link from "next/link"
 import React from "react"
 import brand from "@/constants/brand.json"
+import { buttonVariants } from "@/components/ui/button" // Import buttonVariants from the correct location
 
 // Get the current year dynamically
 const d = new Date()
@@ -23,29 +24,51 @@ export default function Footer() {
 	return (
 		<>
 			<div className="flex-grow" />
-			<div className="h-14 inset-x-0 bottom-0 w-full bg-softest dark:bg-softest-dark text-sm text-softer dark:text-softer-dark">
+			<div
+				className="h-14 inset-x-0 bottom-0 w-full border-t border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 text-sm text-softer dark:text-softer-dark"
+				role="contentinfo" // Landmark role for footer
+			>
 				<MaxWidthWrapper>
-					<div className="flex flex-col sm:flex-row py-5 sm:h-14 items-center justify-between">
+					<div
+						className="flex flex-col sm:flex-row py-5 sm:h-14 items-center justify-between"
+						aria-label="Footer content"
+					>
 						{/* Copyright Section */}
 						<div className="flex py-2 sm:py-0">
-							<span aria-live="polite">
+							<span
+								aria-live="polite"
+								className="sr-only" // Hidden from visual display but still accessible to screen readers
+							>
 								&copy; {d.getFullYear()} {brand.BRAND}. All
 								rights reserved.
 							</span>
 						</div>
 
 						{/* Footer Links Section */}
-						<div className="flex py-2 sm:py-0 gap-2">
+						<div
+							className="flex py-2 sm:py-0 gap-4 items-center"
+							aria-label="Footer links" // Label the link section for screen readers
+						>
 							{links.map((link, index) => (
 								<React.Fragment key={link.id}>
 									<Link
 										href={link.id}
-										aria-label={`Go to ${link.text} page`}
+										className={buttonVariants({
+											variant: "link", // Use the "link" variant for button-like links
+											size: "sm", // Set to small size
+											className: "dark:text-white", // Apply dark mode text color
+										})}
+										aria-label={`Go to ${link.text} page`} // Ensure each link has a descriptive label
 									>
 										{link.text}
 									</Link>
+
+									{/* Divider - border between links */}
 									{index !== links.length - 1 && (
-										<span aria-hidden="true">|</span> // Separator between links
+										<div
+											className="border-l border-gray-200 dark:border-gray-800 h-6 mx-3"
+											aria-hidden="true" // Hide the divider from screen readers
+										/>
 									)}
 								</React.Fragment>
 							))}

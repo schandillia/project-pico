@@ -39,3 +39,6 @@ next.config.js
 postcss.config.js
 src/components/ui/*
 src/lib/utils*
+
+# markdown
+*.md
