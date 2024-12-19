@@ -49,7 +49,7 @@ export default function Home() {
 							<div className="mt-16 flow-root sm:mt-24">
 								<div className="-m-2 rounded-xl bg-gray-900/5 dark:bg-gray-500/15 p-2 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-400/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 									<Image
-										src="/dashboard-preview.jpg"
+										src="/thread-editor.png"
 										alt="product preview"
 										width={1364}
 										height={866}
@@ -138,7 +138,7 @@ export default function Home() {
 					<div className="mt-16 flow-root sm:mt-24">
 						<div className="-m-2 rounded-xl bg-gray-900/5 dark:bg-gray-500/15 p-2 ring-1 ring-inset ring-gray-900/10 dark:ring-gray-400/10 lg:-m-4 lg:rounded-2xl lg:p-4">
 							<Image
-								src="/file-upload-preview.jpg"
+								src="/thread-analytics.png"
 								alt="uploading preview"
 								width={1419}
 								height={732}
