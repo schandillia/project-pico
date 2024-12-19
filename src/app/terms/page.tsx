@@ -1,5 +1,4 @@
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
-import Link from "next/link"
 import brand from "@/constants/brand.json"
 import fs from "fs/promises"
 import path from "path"
