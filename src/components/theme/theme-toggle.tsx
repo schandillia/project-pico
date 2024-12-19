@@ -9,10 +9,12 @@ export default function ThemeToggle() {
 	const { theme, setTheme } = useTheme()
 	const [mounted, setMounted] = React.useState(false)
 
+	// Set mounted to true once the component is mounted to avoid hydration mismatch
 	React.useEffect(() => {
 		setMounted(true)
 	}, [])
 
+	// Function to cycle through the themes: light, dark, and system
 	const cycleTheme = () => {
 		const themes = ["light", "dark", "system"]
 		const currentIndex = themes.indexOf(theme ?? "system")
@@ -20,14 +22,25 @@ export default function ThemeToggle() {
 		setTheme(themes[nextIndex])
 	}
 
+	// Render an empty button before mounting to avoid hydration issues
 	if (!mounted) {
 		return (
-			<Button variant="ghost" size="icon">
+			<Button variant="ghost" size="icon" aria-label="Toggle theme">
 				<span className="h-5 w-5" />
 				<span className="sr-only">Toggle theme</span>
 			</Button>
 		)
 	}
+
+	// Icon mapping based on the current theme
+	const ThemeIcon = {
+		light: <Sun className="text-zinc-700 dark:text-white" />,
+		dark: <MoonStar className="text-zinc-700 dark:text-white" />,
+		system: <Computer className="text-zinc-700 dark:text-white" />,
+	}
+
+	// Use a default value for the theme in case it's undefined
+	const currentTheme = theme ?? "light"
 
 	return (
 		<Button
@@ -35,16 +48,10 @@ export default function ThemeToggle() {
 			variant="ghost"
 			size="icon"
 			onClick={cycleTheme}
+			aria-label="Toggle theme"
 		>
-			{theme === "light" && (
-				<Sun className="text-zinc-700 dark:text-white" />
-			)}
-			{theme === "dark" && (
-				<MoonStar className="text-zinc-700 dark:text-white" />
-			)}
-			{theme === "system" && (
-				<Computer className="text-zinc-700 dark:text-white" />
-			)}
+			{/* Render the appropriate icon based on the current theme */}
+			{ThemeIcon[currentTheme as "light" | "dark" | "system"]}
 			<span className="sr-only">Toggle theme</span>
 		</Button>
 	)
