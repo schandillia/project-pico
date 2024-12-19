@@ -1,5 +1,5 @@
 import { signIn } from "@/auth"
-import { Button, buttonVariants } from "./ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { FaXTwitter } from "react-icons/fa6"
 
 export default function SignIn() {

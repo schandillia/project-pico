@@ -2,9 +2,9 @@ import Link from "next/link"
 import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import brand from "@/constants/brand.json"
-import SignIn from "@/components/sign-in"
+import SignIn from "@/components/commons/SignIn"
 import UserAccountNav from "@/components/commons/UserAccountNav"
-import ThemeToggle from "../theme/theme-toggle"
+import ThemeToggle from "@/components/theme/theme-toggle"
 
 // Define a more specific type for the session
 type Session = {

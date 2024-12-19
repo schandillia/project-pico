@@ -5,7 +5,7 @@ import path from "path"
 import { marked } from "marked"
 
 async function getTermsContent() {
-	const filePath = path.join(process.cwd(), "src", "documents", "TERMS.md")
+	const filePath = path.join(process.cwd(), "src", "documents", "PRIVACY.md")
 	const content = await fs.readFile(filePath, "utf8")
 
 	// Get the current date and format it to "January 13, 2024"
@@ -19,6 +19,8 @@ async function getTermsContent() {
 	const processedContent = content
 		.replace(/{date}/g, formattedDate)
 		.replace(/{brand}/g, brand.BRAND)
+		.replace(/{company}/g, brand.COMPANY)
+		.replace(/{site}/g, brand.SITE)
 		.replace(/{email}/g, brand.SUPPORT_EMAIL)
 		.replace(/{twitter_handle}/g, brand.TWITTER_HANDLE)
 
