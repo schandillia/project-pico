@@ -35,12 +35,8 @@ export default function Footer() {
 					>
 						{/* Copyright Section */}
 						<div className="flex py-2 sm:py-0">
-							<span
-								aria-live="polite"
-								className="sr-only" // Hidden from visual display but still accessible to screen readers
-							>
-								&copy; {d.getFullYear()} {brand.BRAND}. All
-								rights reserved.
+							<span>
+								&copy; {d.getFullYear()} {brand.COMPANY}
 							</span>
 						</div>
 
