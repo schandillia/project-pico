@@ -11,7 +11,7 @@ export default function Home() {
 		<>
 			<MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
 				<h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
-					Craft <span className="text-blue-600">threads</span> in a
+					Craft <span className="text-primary">threads</span> in a
 					jiffy!
 				</h1>
 				<p className="mt-5 max-w-prose text-zinc-700 sm:text-lg">
@@ -92,7 +92,7 @@ export default function Home() {
 				<ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0">
 					<li className="md:flex-1">
 						<div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-							<span className="text-sm font-medium text-blue-600">
+							<span className="text-sm font-medium text-primary">
 								Step 1
 							</span>
 							<span className="text-xl font-semibold">
@@ -107,7 +107,7 @@ export default function Home() {
 					</li>
 					<li className="md:flex-1">
 						<div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-							<span className="text-sm font-medium text-blue-600">
+							<span className="text-sm font-medium text-primary">
 								Step 2
 							</span>
 							<span className="text-xl font-semibold">
@@ -121,7 +121,7 @@ export default function Home() {
 					</li>
 					<li className="md:flex-1">
 						<div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-							<span className="text-sm font-medium text-blue-600">
+							<span className="text-sm font-medium text-primary">
 								Step 3
 							</span>
 							<span className="text-xl font-semibold">
