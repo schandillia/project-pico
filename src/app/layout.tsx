@@ -7,6 +7,7 @@ import brand from "@/constants/brand.json"
 import { auth } from "@/auth"
 import { SessionProvider } from "next-auth/react"
 import { ThemeProvider } from "@/components/theme/theme-provider"
+import Footer from "@/components/commons/Footer"
 
 // Import Google font with Latin subset
 const inter = Inter({ subsets: ["latin"] })
@@ -55,6 +56,7 @@ export default async function RootLayout({
 						>
 							{children}
 						</main>
+						<Footer />
 					</ThemeProvider>
 				</SessionProvider>
 			</body>
