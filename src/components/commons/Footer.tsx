@@ -16,8 +16,8 @@ interface LinkItem {
 const links: LinkItem[] = [
 	{ id: "privacy", text: "Privacy" },
 	{ id: "terms", text: "Terms" },
-	{ id: "legal", text: "Legal" },
 	{ id: "sitemap", text: "Site Map" },
+	{ id: "contact", text: "Contact" },
 ]
 
 export default function Footer() {

@@ -1,5 +1,6 @@
 # Terms of Service
-## These terms are current as of {date}.
+#### These terms are current as of {date}.
+
 By using {brand} (“Service” or “Services”), you agree to be bound by the following Terms and Conditions (“Terms of Service”). {brand} (“Company”) reserves the right to update and change these Terms of Service without prior notice.
 
 These Terms serve as a binding contract between you and {brand}. Your use of the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document, as well as those outlined in the [Privacy Policy](/privacy).

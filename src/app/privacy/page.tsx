@@ -1,51 +1,30 @@
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
+import ContentPage from "@/components/commons/ContentPage"
 import brand from "@/constants/brand.json"
-import fs from "fs/promises"
-import path from "path"
-import { marked } from "marked"
-import type { Metadata } from "next"
+import { Metadata } from "next"
 
 export const metadata: Metadata = {
 	title: `Privacy Policy | ${brand.BRAND}`,
 	description: `Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`,
 }
 
-async function getTermsContent() {
-	const filePath = path.join(process.cwd(), "src", "documents", "PRIVACY.md")
-	const content = await fs.readFile(filePath, "utf8")
-
-	// Get the current date and format it to "January 13, 2024"
-	const currentDate = new Date()
-	const formattedDate = currentDate.toLocaleDateString("en-US", {
-		year: "numeric",
-		month: "long",
-		day: "numeric",
-	})
-
-	const processedContent = content
-		.replace(/{date}/g, formattedDate)
-		.replace(/{brand}/g, brand.BRAND)
-		.replace(/{company}/g, brand.COMPANY)
-		.replace(/{site}/g, brand.SITE)
-		.replace(/{email}/g, brand.SUPPORT_EMAIL)
-		.replace(/{twitter_handle}/g, brand.TWITTER_HANDLE)
-
-	return marked(processedContent)
-}
-
-export default async function Page() {
-	const htmlContent = await getTermsContent()
-
+export default function Page() {
 	return (
-		<MaxWidthWrapper className="flex flex-col">
-			<div className="w-full mx-auto py-8 px-4 sm:px-8 lg:px-10">
-				<div
-					className="prose lg:prose-lg prose-a:text-primary dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
-					dangerouslySetInnerHTML={{
-						__html: htmlContent,
-					}}
-				/>
-			</div>
-		</MaxWidthWrapper>
+		<ContentPage
+			fileName="PRIVACY.md"
+			title={`Privacy Policy | ${brand.BRAND}`}
+			description={`Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`}
+			replaceValues={{
+				date: new Date().toLocaleDateString("en-US", {
+					year: "numeric",
+					month: "long",
+					day: "numeric",
+				}),
+				brand: brand.BRAND,
+				company: brand.COMPANY,
+				site: brand.SITE,
+				email: brand.SUPPORT_EMAIL,
+				twitter_handle: brand.TWITTER_HANDLE,
+			}}
+		/>
 	)
 }
