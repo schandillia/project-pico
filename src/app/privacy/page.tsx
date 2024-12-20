@@ -4,6 +4,7 @@ import fs from "fs/promises"
 import path from "path"
 import { marked } from "marked"
 import type { Metadata } from "next"
+import { getTimeSpan } from "@/lib/getTimeSpan"
 
 export const metadata: Metadata = {
 	title: `Privacy Policy | ${brand.BRAND}`,
@@ -14,7 +15,7 @@ async function getTermsContent() {
 	const filePath = path.join(process.cwd(), "src", "documents", "PRIVACY.md")
 	const content = await fs.readFile(filePath, "utf8")
 
-	// Get the current date and format it to "January 13, 2024"
+	// Get the current date and format it to long date
 	const currentDate = new Date()
 	const formattedDate = currentDate.toLocaleDateString("en-US", {
 		year: "numeric",
@@ -22,19 +23,28 @@ async function getTermsContent() {
 		day: "numeric",
 	})
 
+	// Get the last modified date of the file
+	const fileStats = await fs.stat(filePath)
+	const lastModifiedDate = new Date(fileStats.mtime)
+
+	// Calculate the time span since the last modification
+	const timeSinceModified = `This document was last updated ${getTimeSpan(
+		currentDate,
+		lastModifiedDate,
+	)}`
+
 	const processedContent = content
 		.replace(/{date}/g, formattedDate)
 		.replace(/{brand}/g, brand.BRAND)
 		.replace(/{company}/g, brand.COMPANY)
-		.replace(/{site}/g, brand.SITE)
 		.replace(/{email}/g, brand.SUPPORT_EMAIL)
 		.replace(/{twitter_handle}/g, brand.TWITTER_HANDLE)
 
-	return marked(processedContent)
+	return { htmlContent: marked(processedContent), timeSinceModified }
 }
 
 export default async function Page() {
-	const htmlContent = await getTermsContent()
+	const { htmlContent, timeSinceModified } = await getTermsContent()
 
 	return (
 		<MaxWidthWrapper className="flex flex-col">
@@ -45,6 +55,9 @@ export default async function Page() {
 						__html: htmlContent,
 					}}
 				/>
+				<p className="mt-8 text-md text-zinc-600 dark:text-zinc-400">
+					{timeSinceModified}
+				</p>
 			</div>
 		</MaxWidthWrapper>
 	)
