@@ -19,6 +19,7 @@ async function getTermsContent() {
 	const processedContent = content
 		.replace(/{date}/g, formattedDate)
 		.replace(/{brand}/g, brand.BRAND)
+		.replace(/{company}/g, brand.COMPANY)
 		.replace(/{email}/g, brand.SUPPORT_EMAIL)
 		.replace(/{twitter_handle}/g, brand.TWITTER_HANDLE)
 

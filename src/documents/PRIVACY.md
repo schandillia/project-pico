@@ -23,12 +23,12 @@ We use Cookies for several reasons. Some Cookies are required for technical reas
 * Custom cookie served by {site} to know if a visitor is already authenticated, letting them skip the landing page to use our software-as-a-service directly.
 * Rewardful. It allows our affiliates earn commissions when people visit our website from their links, and then upgrade to paid services.
 ### Your Rights With Respect to Your Information
-You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Accordingly, Typefully recognizes and will comply with GDPR and those rights, except as limited by applicable law. 
+You may have heard about the General Data Protection Regulation (“GDPR”) in Europe. GDPR gives people under its protection certain rights with respect to their personal information collected by us on the Site. Accordingly, {brand} recognizes and will comply with GDPR and those rights, except as limited by applicable law. 
 
 **The rights under GDPR include:**
 - **Right of Access**: Includes your right to access the personal information we gather about you, and your right to obtain information about the sharing, storage, security, and processing of that information.
 - **Right to Correction**: Your right to request correction of your personal information.
-- **Right to Erasure**: Your right to request, subject to certain limitations under applicable law, that your personal information be erased from our possession (also known as the “Right to be forgotten”). However, if applicable law requires us to comply with your request to delete your information, fulfillment of your request may prevent you from using Typefully and may result in closing your account.
+- **Right to Erasure**: Your right to request, subject to certain limitations under applicable law, that your personal information be erased from our possession (also known as the “Right to be forgotten”). However, if applicable law requires us to comply with your request to delete your information, fulfillment of your request may prevent you from using {brand} and may result in closing your account.
 - **Right to Complain**: You have the right to make a complaint regarding our handling of your personal information with the appropriate supervisory authority.
 - **Right to Restrict Processing**: Your right to request restriction of how and why your personal information is used or processed.
 - **Right to Object**: Your right, in certain situations, to object to how or why your personal information is processed.

@@ -16,10 +16,10 @@ Violation of any of the terms below may result in the immediate termination of y
 **Your use of these Services is subject to the following additional restrictions.**
 
 **You represent, warrant, and agree that you will not contribute content to the Service or otherwise use the Services, or interact with the Services in a manner that:**
-1. Infringes or violates the intellectual property rights or any other rights of anyone else (including Typefully Inc);
+1. Infringes or violates the intellectual property rights or any other rights of anyone else (including {company});
 2. Violates any law or regulation, including, without limitation, any applicable export control laws;
 3. Is harmful, fraudulent, deceptive, threatening, harassing, pornographic, defamatory, obscene, or otherwise objectionable;
-4. Jeopardizes the security of your Typefully or X (formerly Twitter) account or anyone else’s (such as allowing someone else to log in to the Services as you);
+4. Jeopardizes the security of your {brand} or X (formerly Twitter) account or anyone else’s (such as allowing someone else to log in to the Services as you);
 5. Attempts, in any manner, to obtain the password, account, or other security information from any other user;
 6. Violates the security of any computer network, or cracks any passwords or security encryption codes;
 7. Runs Maillist, Listserv, or any form of auto-responder or “spam” on the Services, or any processes that run or are activated while you are not logged into the Services, or that otherwise interfere with the proper working of the Services (including by placing an unreasonable load on the Services’ infrastructure);
