@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "./globals.css"
+import "@/app/globals.css"
 import { cn } from "@/lib/utils"
 import Navbar from "@/components/commons/Navbar"
 import brand from "@/constants/brand.json"
@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Metadata for the app
 export const metadata: Metadata = {
-	title: brand.BRAND,
+	title: `${brand.BRAND}: The ultimate tool for creating X (Twitter) threads`,
 	description: brand.DESCRIPTION,
 }
 

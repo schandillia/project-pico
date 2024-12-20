@@ -3,6 +3,12 @@ import brand from "@/constants/brand.json"
 import fs from "fs/promises"
 import path from "path"
 import { marked } from "marked"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+	title: `Terms of Service | ${brand.BRAND}`,
+	description: `Read ${brand.BRAND}’s Terms of Service to understand the rules governing your access of all ${brand.BRAND} services.`,
+}
 
 async function getTermsContent() {
 	const filePath = path.join(process.cwd(), "src", "documents", "TERMS.md")
@@ -35,7 +41,7 @@ export default async function Page() {
 			<MaxWidthWrapper className="flex flex-col">
 				<div className="w-full mx-auto py-8">
 					<div
-						className="prose prose-slate dark:prose-invert lg:prose-lg max-w-4xl mx-auto bg-slate-50 dark:bg-zinc-700 p-10 rounded-lg"
+						className="prose prose-a:text-primary dark:prose-invert lg:prose-lg max-w-4xl mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
 						dangerouslySetInnerHTML={{
 							__html: htmlContent,
 						}}
