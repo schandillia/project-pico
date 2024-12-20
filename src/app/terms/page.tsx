@@ -36,18 +36,15 @@ export default async function Page() {
 	const htmlContent = await getTermsContent()
 
 	return (
-		<>
-			{/* Hero Section */}
-			<MaxWidthWrapper className="flex flex-col">
-				<div className="w-full mx-auto py-8">
-					<div
-						className="prose prose-a:text-primary dark:prose-invert lg:prose-lg max-w-4xl mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
-						dangerouslySetInnerHTML={{
-							__html: htmlContent,
-						}}
-					/>
-				</div>
-			</MaxWidthWrapper>
-		</>
+		<MaxWidthWrapper className="flex flex-col">
+			<div className="w-full mx-auto py-8 px-4 sm:px-8 lg:px-10">
+				<div
+					className="prose lg:prose-lg prose-a:text-primary dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
+					dangerouslySetInnerHTML={{
+						__html: htmlContent,
+					}}
+				/>
+			</div>
+		</MaxWidthWrapper>
 	)
 }

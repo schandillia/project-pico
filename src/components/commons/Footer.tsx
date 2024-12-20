@@ -62,7 +62,7 @@ export default function Footer() {
 									{/* Divider - border between links */}
 									{index !== links.length - 1 && (
 										<div
-											className="border-l border-gray-200 dark:border-gray-800 h-6 mx-3"
+											className="border-l border-gray-200 dark:border-gray-800 h-6"
 											aria-hidden="true" // Hide the divider from screen readers
 										/>
 									)}

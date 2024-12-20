@@ -6,7 +6,7 @@
 	"TAGLINE": "Your Catchy Tagline",
 	"DEFAULT_LOCALE": "en-US",
 	"SUPPORTED_LANGUAGES": ["en-US", "es-ES", "fr-FR"],
-	"COPYRIGHT_YEAR": 2024,
+	"COPYRIGHT_START_YEAR": 2024,
 	"SUPPORT_EMAIL": "support@pico.com",
 	"TWITTER_HANDLE": "@pico"
 }
