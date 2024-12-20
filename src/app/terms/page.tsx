@@ -35,8 +35,10 @@ export default async function Page() {
 			<MaxWidthWrapper className="flex flex-col">
 				<div className="w-full mx-auto py-8">
 					<div
-						className="prose prose-slate lg:prose-lg max-w-4xl mx-auto"
-						dangerouslySetInnerHTML={{ __html: htmlContent }}
+						className="prose prose-slate dark:prose-invert lg:prose-lg max-w-4xl mx-auto bg-slate-50 dark:bg-zinc-700 p-10 rounded-lg"
+						dangerouslySetInnerHTML={{
+							__html: htmlContent,
+						}}
 					/>
 				</div>
 			</MaxWidthWrapper>

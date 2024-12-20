@@ -1,21 +1,10 @@
 {
-  "pylint.lintOnChange": true,
-  "files.eol": "\n",
-  "remote.SSH.remotePlatform": {
-    "ec2-44-201-139-242.compute-1.amazonaws.com": "linux",
-    "ec2-3-84-36-89.compute-1.amazonaws.com": "linux"
-  },
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.openRepositoryInParentFolders": "never",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "workbench.settings.applyToAllProfiles": []
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.format": "explicit"
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib"
 }
