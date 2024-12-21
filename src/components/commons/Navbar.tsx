@@ -1,5 +1,5 @@
 import Link from "next/link"
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import brand from "@/constants/brand.json"
 import SignIn from "@/components/commons/SignIn"
@@ -37,7 +37,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
 			className="sticky h-14 inset-x-0 top-0 z-30 w-full border-b border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 backdrop-blur-lg transition-all"
 			aria-label="Main navigation"
 		>
-			<MaxWidthWrapper>
+			<ViewportWrapper>
 				<div className="flex h-14 items-center justify-between border-b border-gray-200 dark:border-gray-800">
 					{/* Brand Logo */}
 					<Link
@@ -59,7 +59,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
 								className={buttonVariants({
 									variant: "link",
 									size: "sm",
-									className: "dark:text-white",
+									className: "dark:text-primary/90",
 								})}
 								aria-label={ariaLabel}
 							>
@@ -84,7 +84,7 @@ const Navbar = ({ session }: { session: Session | null }) => {
 						)}
 					</div>
 				</div>
-			</MaxWidthWrapper>
+			</ViewportWrapper>
 		</nav>
 	)
 }

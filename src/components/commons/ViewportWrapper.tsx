@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 import { ReactNode } from "react"
 
-function MaxWidthWrapper({
+function ViewportWrapper({
 	className,
 	children,
 }: {
@@ -20,4 +20,4 @@ function MaxWidthWrapper({
 	)
 }
 
-export default MaxWidthWrapper
+export default ViewportWrapper

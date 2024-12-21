@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import { buttonVariants } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
 import Image from "next/image"
@@ -45,8 +45,8 @@ export default function Home() {
 	return (
 		<>
 			{/* Hero Section */}
-			<MaxWidthWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-				<h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl">
+			<ViewportWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+				<h1 className="max-w-4xl text-5xl font-bold md:text-6xl lg:text-7xl text-soft dark:text-white">
 					Create <span className="text-primary">threads</span> in a
 					jiffy!
 				</h1>
@@ -58,7 +58,7 @@ export default function Home() {
 				<Link
 					className={buttonVariants({
 						size: "lg",
-						className: "mt-5 dark:text-white",
+						className: "mt-5 dark:text-white dark:bg-primary/80",
 					})}
 					href="/dashboard"
 					aria-label="Get started with thread creation"
@@ -66,7 +66,7 @@ export default function Home() {
 					Get started{" "}
 					<ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
 				</Link>
-			</MaxWidthWrapper>
+			</ViewportWrapper>
 
 			{/* Background Gradient */}
 			<div className="relative isolate">
@@ -101,7 +101,7 @@ export default function Home() {
 			<div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
 				<div className="mb-12 px-6 lg:px-8">
 					<div className="mx-auto max-w-2xl sm:text-center">
-						<h2 className="mt-2 font-bold text-4xl text-gray-900 dark:text-gray-200 sm:text-5xl">
+						<h2 className="mt-2 font-bold text-4xl text-soft dark:text-white sm:text-5xl">
 							Start creating right away
 						</h2>
 						<p className={`mt-4 text-lg ${styles.text}`}>
@@ -119,7 +119,7 @@ export default function Home() {
 								<span className="text-sm font-medium text-primary">
 									{step}
 								</span>
-								<span className="text-xl font-semibold">
+								<span className="text-xl font-semibold text-soft dark:text-white">
 									{title} {icon}
 								</span>
 								<span className={`mt-2 ${styles.text}`}>

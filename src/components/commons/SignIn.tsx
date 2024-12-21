@@ -14,7 +14,7 @@ export default function SignIn() {
 				type="submit"
 				className={buttonVariants({
 					size: "sm",
-					className: "dark:text-white",
+					className: "dark:text-white dark:bg-primary/80",
 				})}
 			>
 				Sign in with <FaXTwitter />

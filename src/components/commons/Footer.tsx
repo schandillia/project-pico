@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import Link from "next/link"
 import React from "react"
 import brand from "@/constants/brand.json"
@@ -25,10 +25,10 @@ export default function Footer() {
 		<>
 			<div className="flex-grow" />
 			<div
-				className="h-14 inset-x-0 bottom-0 w-full border-t border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 text-sm text-softer dark:text-softer-dark"
+				className="h-14 inset-x-0 bottom-0 w-full border-t border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 text-sm text-soft dark:text-white/70"
 				role="contentinfo" // Landmark role for footer
 			>
-				<MaxWidthWrapper>
+				<ViewportWrapper>
 					<div
 						className="flex flex-col sm:flex-row py-5 sm:h-14 items-center justify-between"
 						aria-label="Footer content"
@@ -52,7 +52,7 @@ export default function Footer() {
 										className={buttonVariants({
 											variant: "link", // Use the "link" variant for button-like links
 											size: "sm", // Set to small size
-											className: "dark:text-white", // Apply dark mode text color
+											className: "dark:text-primary/90", // Apply dark mode text color
 										})}
 										aria-label={`Go to ${link.text} page`} // Ensure each link has a descriptive label
 									>
@@ -70,7 +70,7 @@ export default function Footer() {
 							))}
 						</div>
 					</div>
-				</MaxWidthWrapper>
+				</ViewportWrapper>
 			</div>
 		</>
 	)

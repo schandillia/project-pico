@@ -1,4 +1,4 @@
-import MaxWidthWrapper from "@/components/commons/MaxWidthWrapper"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import brand from "@/constants/brand.json"
 import fs from "fs/promises"
 import path from "path"
@@ -42,30 +42,30 @@ async function getDocumentContent(markdownDocument: string) {
 	return { htmlContent: marked(processedContent), timeSinceModified }
 }
 
-interface MarkdownRendererProps {
+interface DocumentRendererProps {
 	markdownDocument: string
 }
 
-export default async function MarkdownRenderer({
+export default async function DocumentRenderer({
 	markdownDocument = "TERMS.md",
-}: MarkdownRendererProps) {
+}: DocumentRendererProps) {
 	const { htmlContent, timeSinceModified } = await getDocumentContent(
 		markdownDocument,
 	)
 
 	return (
-		<MaxWidthWrapper className="flex flex-col">
+		<ViewportWrapper className="flex flex-col">
 			<div className="w-full mx-auto py-8 px-4 sm:px-8 lg:px-10">
 				<div
-					className="prose lg:prose-lg prose-a:text-primary prose-h4:text-zinc-500 dark:prose-h4:text-zinc-400 dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
+					className="prose lg:prose-lg prose-headings:text-soft dark:prose-headings:text-white/70 prose-strong:text-soft dark:prose-strong:text-white/70 prose-a:text-primary dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
 					dangerouslySetInnerHTML={{
 						__html: htmlContent,
 					}}
 				/>
-				<p className="mt-8 text-md text-zinc-600 dark:text-zinc-400">
+				<p className="mt-8 text-md text-soft dark:text-white/70">
 					{timeSinceModified}
 				</p>
 			</div>
-		</MaxWidthWrapper>
+		</ViewportWrapper>
 	)
 }

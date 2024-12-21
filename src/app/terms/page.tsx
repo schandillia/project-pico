@@ -1,4 +1,4 @@
-import MarkdownRenderer from "@/components/commons/MarkdownRenderer"
+import DocumentRenderer from "@/components/commons/DocumentRenderer"
 import type { Metadata } from "next"
 import brand from "@/constants/brand.json"
 
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function Page() {
-	return <MarkdownRenderer markdownDocument="TERMS.md" />
+	return <DocumentRenderer markdownDocument="TERMS.md" />
 }

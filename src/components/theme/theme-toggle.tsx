@@ -34,9 +34,9 @@ export default function ThemeToggle() {
 
 	// Icon mapping based on the current theme
 	const ThemeIcon = {
-		light: <Sun className="text-zinc-700 dark:text-white" />,
-		dark: <MoonStar className="text-zinc-700 dark:text-white" />,
-		system: <Computer className="text-zinc-700 dark:text-white" />,
+		light: <Sun className="text-softer dark:text-white" />,
+		dark: <MoonStar className="text-softer dark:text-white" />,
+		system: <Computer className="text-softer dark:text-white" />,
 	}
 
 	// Use a default value for the theme in case it's undefined
