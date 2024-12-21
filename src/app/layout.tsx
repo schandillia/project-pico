@@ -53,7 +53,6 @@ export default async function RootLayout({
 							id="main-content"
 							role="main"
 							aria-labelledby="main-heading"
-							className="selection:bg-primary selection:text-white dark:selection:text-black/70"
 						>
 							{children}
 						</main>
