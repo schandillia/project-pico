@@ -5,6 +5,7 @@ import brand from "@/constants/brand.json"
 import SignIn from "@/components/commons/SignIn"
 import UserAccountNav from "@/components/commons/UserAccountNav"
 import ThemeToggle from "@/components/theme/theme-toggle"
+import NavbarLogo from "@/components/commons/NavbarLogo"
 
 // Define a more specific type for the session
 type Session = {
@@ -42,10 +43,10 @@ const Navbar = ({ session }: { session: Session | null }) => {
 					{/* Brand Logo */}
 					<Link
 						href="/"
-						className="flex z-40 font-semibold dark:text-white"
-						aria-label={`${brand.BRAND} homepage`}
+						className="flex z-40 font-semibold gap-2 items-center"
 					>
-						<span>{brand.BRAND}</span>
+						<NavbarLogo />
+						<span className="text-lg">{brand.BRAND}</span>
 					</Link>
 
 					{/* TODO: Add mobile navbar */}
