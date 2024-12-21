@@ -23,9 +23,9 @@ const links: LinkItem[] = [
 export default function Footer() {
 	return (
 		<>
-			<div className="flex-grow" />
+			{/* <div className="flex-grow" /> */}
 			<div
-				className="h-14 inset-x-0 bottom-0 w-full border-t border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 text-sm text-soft dark:text-white/70"
+				className="inset-x-0 bottom-0 w-full border-t border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-black/75 text-sm text-soft dark:text-white/70"
 				role="contentinfo" // Landmark role for footer
 			>
 				<ViewportWrapper>
