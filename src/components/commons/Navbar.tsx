@@ -46,7 +46,9 @@ const Navbar = ({ session }: { session: Session | null }) => {
 						className="flex z-40 font-semibold gap-2 items-center"
 					>
 						<NavbarLogo />
-						<span className="text-lg">{brand.BRAND}</span>
+						<span className="text-lg text-soft dark:text-white/70">
+							{brand.BRAND}
+						</span>
 					</Link>
 
 					{/* TODO: Add mobile navbar */}
