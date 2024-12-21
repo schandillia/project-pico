@@ -1,7 +1,7 @@
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import Link from "next/link"
 import React from "react"
-import brand from "@/constants/brand.json"
+import brand from "@/lib/constants/brand.json"
 import { buttonVariants } from "@/components/ui/button" // Import buttonVariants from the correct location
 
 // Get the current year dynamically

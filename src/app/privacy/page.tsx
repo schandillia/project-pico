@@ -1,6 +1,6 @@
 import DocumentRenderer from "@/components/commons/DocumentRenderer"
 import type { Metadata } from "next"
-import brand from "@/constants/brand.json"
+import brand from "@/lib/constants/brand.json"
 
 export const metadata: Metadata = {
 	title: `Privacy Policy | ${brand.BRAND}`,

@@ -1,5 +1,5 @@
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
-import brand from "@/constants/brand.json"
+import brand from "@/lib/constants/brand.json"
 import fs from "fs/promises"
 import path from "path"
 import { marked } from "marked"

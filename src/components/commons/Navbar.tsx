@@ -1,7 +1,7 @@
 import Link from "next/link"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import { buttonVariants } from "@/components/ui/button"
-import brand from "@/constants/brand.json"
+import brand from "@/lib/constants/brand.json"
 import SignIn from "@/components/commons/SignIn"
 import UserAccountNav from "@/components/commons/UserAccountNav"
 import ThemeToggle from "@/components/theme/theme-toggle"

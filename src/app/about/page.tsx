@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import brand from "@/constants/brand.json"
+import brand from "@/lib/constants/brand.json"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
 
 export const metadata: Metadata = {
