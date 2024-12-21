@@ -32,7 +32,7 @@ export default async function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 			<body
 				className={cn(
-					"min-h-screen font-sans antialiased", // Minimum height and font styling
+					"min-h-screen font-sans antialiased flex flex-col", // Minimum height and font styling
 					inter.className, // Apply Inter font class
 				)}
 				aria-busy="false" // Indicate loading state for accessibility
@@ -50,6 +50,7 @@ export default async function RootLayout({
 
 						{/* Main content area */}
 						<main
+							className="flex-1"
 							id="main-content"
 							role="main"
 							aria-labelledby="main-heading"
