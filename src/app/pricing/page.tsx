@@ -100,11 +100,10 @@ export default function Page() {
 									href={user ? "/dashboard" : "/sign-up"}
 									className={cn(
 										buttonVariants({
-											variant:
-												index === 1
-													? "default"
-													: "outline",
+											variant: "default",
 											size: "lg",
+											className:
+												"dark:text-white dark:bg-primary/80",
 										}),
 										"w-full mt-auto",
 									)}

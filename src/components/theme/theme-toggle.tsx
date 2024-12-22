@@ -45,7 +45,7 @@ export default function ThemeToggle() {
 	return (
 		<Button
 			className="rounded-full hover:opacity-80"
-			variant="ghost"
+			variant="outline"
 			size="icon"
 			onClick={cycleTheme}
 			aria-label="Toggle theme"
