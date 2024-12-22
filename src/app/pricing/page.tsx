@@ -39,8 +39,14 @@ export default function Page() {
 								index === 1 && "border-2 border-primary",
 							)}
 						>
-							<CardHeader className="text-center">
-								<h2 className="text-3xl mb-2 font-bold text-soft dark:text-white">
+							<CardHeader className="text-center relative">
+								{/* Tag for the middle card */}
+								{index === 1 && (
+									<div className="z-50 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 bg-white dark:bg-zinc-800 border-primary border-2 rounded-full py-2 px-6 text-xl leading-tight font-semibold text-primary">
+										Popular
+									</div>
+								)}
+								<h2 className="text-3xl my-2 font-bold text-soft dark:text-white">
 									{item.plan}
 								</h2>
 								<p className="text-sm text-muted-foreground">
