@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import brand from "@/lib/constants/brand.json"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
+import PageHeading from "@/components/commons/PageHeading"
 
 export const metadata: Metadata = {
 	title: `About | ${brand.BRAND}`,
@@ -8,8 +9,8 @@ export const metadata: Metadata = {
 }
 export default function Page() {
 	return (
-		<ViewportWrapper className="flex flex-col">
-			<div>about</div>
+		<ViewportWrapper className="my-8 flex flex-col">
+			<PageHeading>About</PageHeading>
 		</ViewportWrapper>
 	)
 }

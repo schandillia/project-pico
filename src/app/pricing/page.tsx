@@ -13,6 +13,7 @@ import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import subscriptionPlans from "@/lib/constants/subscription_plans.json"
+import PageHeading from "@/components/commons/PageHeading"
 
 export const metadata: Metadata = {
 	title: `Subscription Plans | ${brand.BRAND}`,
@@ -23,9 +24,7 @@ export default function Page() {
 
 	return (
 		<ViewportWrapper className="my-8 flex flex-col">
-			<h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-				Pricing
-			</h1>
+			<PageHeading>Pricing</PageHeading>
 			<p className="mt-5 text-soft dark:text-white/70 sm:text-lg">
 				Whether you’re just trying out {brand.BRAND} or need more, we’ve
 				got you covered.
@@ -41,13 +40,13 @@ export default function Page() {
 							)}
 						>
 							<CardHeader className="text-center">
-								<h2 className="text-3xl mb-2 font-bold">
+								<h2 className="text-3xl mb-2 font-bold text-soft dark:text-white">
 									{item.plan}
 								</h2>
 								<p className="text-sm text-muted-foreground">
 									{item.tagline}
 								</p>
-								<div className="mt-4 flex items-center justify-center">
+								<div className="mt-4 flex items-center justify-center text-soft dark:text-white">
 									<span className="text-3xl font-bold">
 										${item.price}
 									</span>
@@ -65,9 +64,9 @@ export default function Page() {
 												className="flex items-center"
 											>
 												{feature.negative ? (
-													<X className="mr-2 h-4 w-4 text-muted-foreground" />
+													<X className="mr-2 h-4 w-4 text-red-500" />
 												) : (
-													<Check className="mr-2 h-4 w-4 text-primary" />
+													<Check className="mr-2 h-4 w-4 text-green-500" />
 												)}
 												<span
 													className={`flex items-center ${
