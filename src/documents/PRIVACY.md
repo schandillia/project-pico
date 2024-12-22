@@ -1,4 +1,3 @@
-# Privacy Policy
 #### This policy is current as of {date}.
 {brand} is a product created by {company} (“{brand}”). We at {brand} know that you care about how your personal information is used and shared, and we take your privacy seriously. Please read the following to learn more about our Privacy Policy. 
 

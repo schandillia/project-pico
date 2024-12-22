@@ -55,18 +55,16 @@ export default async function DocumentRenderer({
 	)
 
 	return (
-		<ViewportWrapper className="flex flex-col">
-			<div className="w-full mx-auto py-8 px-4 sm:px-8 lg:px-10">
-				<div
-					className="prose lg:prose-lg prose-headings:text-soft dark:prose-headings:text-white/70 prose-strong:text-soft dark:prose-strong:text-white/70 prose-a:text-primary dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
-					dangerouslySetInnerHTML={{
-						__html: htmlContent,
-					}}
-				/>
-				<p className="mt-8 text-md text-soft dark:text-white/70">
-					{timeSinceModified}
-				</p>
-			</div>
-		</ViewportWrapper>
+		<div className="w-full mx-auto py-8">
+			<div
+				className="prose lg:prose-lg prose-headings:text-soft dark:prose-headings:text-white/70 prose-strong:text-soft dark:prose-strong:text-white/70 prose-a:text-primary dark:prose-invert max-w-full mx-auto bg-zinc-200 dark:bg-zinc-700 p-10 rounded-lg"
+				dangerouslySetInnerHTML={{
+					__html: htmlContent,
+				}}
+			/>
+			<p className="mt-8 text-md text-soft dark:text-white/70">
+				{timeSinceModified}
+			</p>
+		</div>
 	)
 }

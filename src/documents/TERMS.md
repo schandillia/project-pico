@@ -1,4 +1,3 @@
-# Terms of Service
 #### These terms are current as of {date}.
 
 By using {brand} (“Service” or “Services”), you agree to be bound by the following Terms and Conditions (“Terms of Service”). {brand} (“Company”) reserves the right to update and change these Terms of Service without prior notice.

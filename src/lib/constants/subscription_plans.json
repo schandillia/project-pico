@@ -1,0 +1,104 @@
+[
+	{
+		"plan": "Starter",
+		"tagline": "For casual users exploring thread creation",
+		"price": 0,
+		"features": [
+			{
+				"text": "Save up to 5 drafts",
+				"footnote": "Limited storage for your thread drafts"
+			},
+			{
+				"text": "Up to 50 tweets per thread",
+				"footnote": "Maximum number of tweets in a single thread"
+			},
+			{
+				"text": "2 media files per tweet",
+				"footnote": "Attach images, GIFs, or videos to your tweets"
+			},
+			{
+				"text": "Basic posting functionality",
+				"footnote": "Immediate posting only, no scheduling"
+			},
+			{
+				"text": "AI assistance",
+				"footnote": "Access to AI-powered content generation tools",
+				"negative": true
+			},
+			{
+				"text": "Analytics features",
+				"footnote": "Track performance metrics of your threads",
+				"negative": true
+			}
+		],
+		"buttonText": "Get Started",
+		"buttonVariant": "outline"
+	},
+	{
+		"plan": "Power Threader",
+		"tagline": "For professionals who need advanced tools",
+		"price": 9.99,
+		"features": [
+			{
+				"text": "Unlimited drafts",
+				"footnote": "Save and manage drafts without limits"
+			},
+			{
+				"text": "Unlimited thread length",
+				"footnote": "Create threads with no tweet cap"
+			},
+			{
+				"text": "4 media files per tweet",
+				"footnote": "Attach more images, GIFs, or videos per tweet"
+			},
+			{
+				"text": "Advanced scheduling",
+				"footnote": "Plan threads for future posting with flexible time options"
+			},
+			{
+				"text": "Engagement analytics",
+				"footnote": "Track likes, retweets, and replies"
+			},
+			{
+				"text": "AI assistance",
+				"footnote": "AI-powered content generation tools",
+				"negative": true
+			}
+		],
+		"buttonText": "Upgrade to Creator",
+		"buttonVariant": "default"
+	},
+	{
+		"plan": "Thread Guru",
+		"tagline": "For creators who want AI-powered assistance",
+		"price": 24.99,
+		"features": [
+			{
+				"text": "All Creator features",
+				"footnote": "Including unlimited drafts, scheduling, and analytics"
+			},
+			{
+				"text": "AI-assisted idea generation",
+				"footnote": "Get AI suggestions for thread topics"
+			},
+			{
+				"text": "AI grammar check",
+				"footnote": "Improve clarity and accuracy in your threads"
+			},
+			{
+				"text": "Style improvement",
+				"footnote": "Optimize tone and style for better engagement"
+			},
+			{
+				"text": "AI-powered refinements",
+				"footnote": "Smart adjustments for clarity and impact"
+			},
+			{
+				"text": "Priority support",
+				"footnote": "Get help when you need it most"
+			}
+		],
+		"buttonText": "Upgrade to Mastermind",
+		"buttonVariant": "outline"
+	}
+]
