@@ -8,7 +8,7 @@ import {
 	TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { cn } from "@/lib/utils"
-import { Check, HelpCircle, X } from "lucide-react"
+import { Check, HelpCircle, Star, X } from "lucide-react"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
@@ -42,8 +42,10 @@ export default function Page() {
 							<CardHeader className="text-center relative">
 								{/* Tag for the middle card */}
 								{index === 1 && (
-									<div className="z-50 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 bg-white dark:bg-zinc-800 border-primary border-2 rounded-full py-2 px-6 text-xl leading-tight font-semibold text-primary">
+									<div className="flex items-center justify-center z-50 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-6 bg-white dark:bg-zinc-800 border-primary border-2 rounded-full py-2 px-6 text-xl leading-tight font-semibold text-primary">
+										<Star className="mr-2" />
 										Popular
+										<Star className="ml-2" />
 									</div>
 								)}
 								<h2 className="text-3xl my-2 font-bold text-soft dark:text-white">

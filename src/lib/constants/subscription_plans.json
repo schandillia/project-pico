@@ -13,21 +13,37 @@
 				"footnote": "Maximum number of tweets in a single thread"
 			},
 			{
-				"text": "2 media files per tweet",
-				"footnote": "Attach images, GIFs, or videos to your tweets"
-			},
-			{
-				"text": "Basic posting functionality",
+				"text": "One-click posting",
 				"footnote": "Immediate posting only, no scheduling"
 			},
 			{
-				"text": "AI assistance",
-				"footnote": "Access to AI-powered content generation tools",
+				"text": "Post scheduling",
+				"footnote": "Plan threads for future posting with flexible time options",
 				"negative": true
 			},
 			{
-				"text": "Analytics features",
+				"text": "Engagement analytics",
 				"footnote": "Track performance metrics of your threads",
+				"negative": true
+			},
+			{
+				"text": "Technical support",
+				"footnote": "Get help when you need it most",
+				"negative": true
+			},
+			{
+				"text": "AI-assisted ideation",
+				"footnote": "Get AI suggestions for thread topicsGet AI suggestions for thread topics",
+				"negative": true
+			},
+			{
+				"text": "AI-assisted grammar checks",
+				"footnote": "Improve clarity and accuracy in your threads",
+				"negative": true
+			},
+			{
+				"text": "AI-assisted style check",
+				"footnote": "Optimize tone and style for better engagement",
 				"negative": true
 			}
 		],
@@ -48,20 +64,34 @@
 				"footnote": "Create threads with no tweet cap"
 			},
 			{
-				"text": "4 media files per tweet",
-				"footnote": "Attach more images, GIFs, or videos per tweet"
+				"text": "One-click posting",
+				"footnote": "Immediate posting only, no scheduling"
 			},
 			{
-				"text": "Advanced scheduling",
+				"text": "Post scheduling",
 				"footnote": "Plan threads for future posting with flexible time options"
 			},
 			{
 				"text": "Engagement analytics",
-				"footnote": "Track likes, retweets, and replies"
+				"footnote": "Track performance metrics of your threads"
 			},
 			{
-				"text": "AI assistance",
-				"footnote": "AI-powered content generation tools",
+				"text": "Technical support",
+				"footnote": "Get help when you need it most"
+			},
+			{
+				"text": "AI-assisted ideation",
+				"footnote": "Get AI suggestions for thread topicsGet AI suggestions for thread topics",
+				"negative": true
+			},
+			{
+				"text": "AI-assisted grammar checks",
+				"footnote": "Improve clarity and accuracy in your threads",
+				"negative": true
+			},
+			{
+				"text": "AI-assisted style check",
+				"footnote": "Optimize tone and style for better engagement",
 				"negative": true
 			}
 		],
@@ -74,28 +104,40 @@
 		"price": 24.99,
 		"features": [
 			{
-				"text": "All Creator features",
-				"footnote": "Including unlimited drafts, scheduling, and analytics"
+				"text": "Unlimited drafts",
+				"footnote": "Save and manage drafts without limits"
 			},
 			{
-				"text": "AI-assisted idea generation",
-				"footnote": "Get AI suggestions for thread topics"
+				"text": "Unlimited thread length",
+				"footnote": "Create threads with no tweet cap"
 			},
 			{
-				"text": "AI grammar check",
-				"footnote": "Improve clarity and accuracy in your threads"
+				"text": "One-click posting",
+				"footnote": "Immediate posting only, no scheduling"
 			},
 			{
-				"text": "Style improvement",
-				"footnote": "Optimize tone and style for better engagement"
+				"text": "Post scheduling",
+				"footnote": "Plan threads for future posting with flexible time options"
 			},
 			{
-				"text": "AI-powered refinements",
-				"footnote": "Smart adjustments for clarity and impact"
+				"text": "Engagement analytics",
+				"footnote": "Track performance metrics of your threads"
 			},
 			{
 				"text": "Priority support",
-				"footnote": "Get help when you need it most"
+				"footnote": "Get personalized help when you need it most"
+			},
+			{
+				"text": "AI-assisted ideation",
+				"footnote": "Get AI suggestions for thread topicsGet AI suggestions for thread topics"
+			},
+			{
+				"text": "AI-assisted grammar checks",
+				"footnote": "Improve clarity and accuracy in your threads"
+			},
+			{
+				"text": "AI-assisted style check",
+				"footnote": "Optimize tone and style for better engagement"
 			}
 		],
 		"buttonText": "Upgrade to Mastermind",
