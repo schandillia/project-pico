@@ -3,11 +3,11 @@ import type { Metadata } from "next"
 import PageHeading from "@/components/commons/PageHeading"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
 
-import brand from "@/lib/constants/brand.json"
+import meta from "@/lib/constants/meta.json"
 
 export const metadata: Metadata = {
-	title: `About | ${brand.BRAND}`,
-	description: `Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`,
+	title: meta.DISCOVER.TITLE,
+	description: meta.DISCOVER.DESCRIPTION,
 }
 
 export default function Page() {

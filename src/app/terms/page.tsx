@@ -4,11 +4,11 @@ import DocumentRenderer from "@/components/commons/DocumentRenderer"
 import PageHeading from "@/components/commons/PageHeading"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
 
-import brand from "@/lib/constants/brand.json"
+import meta from "@/lib/constants/meta.json"
 
 export const metadata: Metadata = {
-	title: `Terms of Service | ${brand.BRAND}`,
-	description: `Read ${brand.BRAND}’s Terms of Service to understand the rules governing your access of all ${brand.BRAND} services.`,
+	title: meta.TERMS.TITLE,
+	description: meta.TERMS.DESCRIPTION,
 }
 
 export default function Page() {

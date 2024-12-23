@@ -15,14 +15,15 @@ import {
 } from "@/components/ui/tooltip"
 
 import brand from "@/lib/constants/brand.json"
+import meta from "@/lib/constants/meta.json"
 import subscriptionPlans from "@/lib/constants/subscription_plans.json"
 import { cn } from "@/lib/utils"
 
 import { auth } from "@/auth"
 
 export const metadata: Metadata = {
-	title: `Subscription Plans | ${brand.BRAND}`,
-	description: `Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`,
+	title: meta.PRICING.TITLE,
+	description: meta.PRICING.DESCRIPTION,
 }
 
 export default async function Page() {

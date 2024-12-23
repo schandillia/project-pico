@@ -2,7 +2,6 @@
 	"BRAND": "Pico",
 	"COMPANY": "Pico Inc.",
 	"SITE": "https://pico.com",
-	"DESCRIPTION": "Supercharge your X (Twitter) threads with intuitive tools and AI enhancements. Plan, schedule, and optimize to boost creativity, efficiency, and growth.",
 	"TAGLINE": "Your Catchy Tagline",
 	"DEFAULT_LOCALE": "en-US",
 	"SUPPORTED_LANGUAGES": ["en-US", "es-ES", "fr-FR"],

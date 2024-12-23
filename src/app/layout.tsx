@@ -7,7 +7,7 @@ import Footer from "@/components/commons/Footer"
 import Navbar from "@/components/commons/Navbar"
 import { ThemeProvider } from "@/components/theme/theme-provider"
 
-import brand from "@/lib/constants/brand.json"
+import meta from "@/lib/constants/meta.json"
 import { cn } from "@/lib/utils"
 
 import "@/app/globals.css"
@@ -18,8 +18,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 // Metadata for the app
 export const metadata: Metadata = {
-	title: `${brand.BRAND}: The ultimate tool for creating X (Twitter) threads`,
-	description: brand.DESCRIPTION,
+	title: meta.HOME.TITLE,
+	description: meta.HOME.DESCRIPTION,
 }
 
 // Reusable Layout Component
