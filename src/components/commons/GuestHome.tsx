@@ -1,7 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { ArrowRight } from "lucide-react"
 import { FaXTwitter } from "react-icons/fa6"
 
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
@@ -66,8 +65,7 @@ export default function GuestHome() {
 					href="/dashboard"
 					aria-label="Get started with thread creation"
 				>
-					Get started{" "}
-					<ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+					Get started
 				</Link>
 			</ViewportWrapper>
 
