@@ -1,7 +1,6 @@
 import { auth } from "@/auth"
 import GuestHome from "@/components/commons/GuestHome"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
-
 export default async function Home() {
 	const session = await auth()
 	const user = session?.user

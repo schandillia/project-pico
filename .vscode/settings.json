@@ -1,7 +1,12 @@
 {
 	"editor.formatOnPaste": true,
 	"editor.formatOnSave": true,
+	"editor.trimAutoWhitespace": true,
+	"json.format.enable": true,
+	"json.trailingCommas": "none",
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"javascript.preferences.insertSemicolons": false,
+	"typescript.preferences.insertSemicolons": false,
 	"editor.codeActionsOnSave": {
 		"source.organizeImports": "always",
 		"source.fixAll.eslint": "explicit",
