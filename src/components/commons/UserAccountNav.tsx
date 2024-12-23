@@ -1,5 +1,11 @@
 import React from "react"
+
 import Link from "next/link"
+
+// import initials from "@/lib/initials"
+import { User } from "lucide-react"
+
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -7,10 +13,9 @@ import {
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-// import initials from "@/lib/initials"
-import { User } from "lucide-react"
+
 import SignoutButton from "./SignOutButton"
+
 // import SignoutButton from "@/components/commons/SignOutButton"
 
 interface UserAccountNavProps {

@@ -7,10 +7,16 @@
 	"trailingComma": "all",
 	"printWidth": 80,
 	"importOrder": [
-		"^react",
+		"^react$",
+		"^react/(.*)$",
+		"^next/(.*)$",
 		"<THIRD_PARTY_MODULES>",
-		"^@/components",
+		"^@/components/(.*)$",
+		"^@/lib/(.*)$",
+		"^@/(.*)$",
 		"^[./]"
 	],
-	"importOrderSeparation": true
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true,
+	"plugins": ["@trivago/prettier-plugin-sort-imports"]
 }

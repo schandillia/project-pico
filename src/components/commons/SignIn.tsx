@@ -1,6 +1,8 @@
-import { signIn } from "@/auth"
-import { Button, buttonVariants } from "@/components/ui/button"
 import { FaXTwitter } from "react-icons/fa6"
+
+import { Button, buttonVariants } from "@/components/ui/button"
+
+import { signIn } from "@/auth"
 
 export default function SignIn() {
 	return (

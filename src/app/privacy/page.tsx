@@ -1,8 +1,10 @@
-import DocumentRenderer from "@/components/commons/DocumentRenderer"
 import type { Metadata } from "next"
-import brand from "@/lib/constants/brand.json"
-import ViewportWrapper from "@/components/commons/ViewportWrapper"
+
+import DocumentRenderer from "@/components/commons/DocumentRenderer"
 import PageHeading from "@/components/commons/PageHeading"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
+
+import brand from "@/lib/constants/brand.json"
 
 export const metadata: Metadata = {
 	title: `Privacy Policy | ${brand.BRAND}`,

@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+
 import brand from "@/lib/constants/brand.json"
 
 export default function NavbarLogo() {

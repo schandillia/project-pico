@@ -1,11 +1,13 @@
 import Link from "next/link"
-import ViewportWrapper from "@/components/commons/ViewportWrapper"
-import { buttonVariants } from "@/components/ui/button"
-import brand from "@/lib/constants/brand.json"
+
+import NavbarLogo from "@/components/commons/NavbarLogo"
 import SignIn from "@/components/commons/SignIn"
 import UserAccountNav from "@/components/commons/UserAccountNav"
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
 import ThemeToggle from "@/components/theme/theme-toggle"
-import NavbarLogo from "@/components/commons/NavbarLogo"
+import { buttonVariants } from "@/components/ui/button"
+
+import brand from "@/lib/constants/brand.json"
 
 // Define a more specific type for the session
 type Session = {

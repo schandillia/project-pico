@@ -1,9 +1,12 @@
-import ViewportWrapper from "@/components/commons/ViewportWrapper"
-import { buttonVariants } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+
+import { ArrowRight } from "lucide-react"
 import { FaXTwitter } from "react-icons/fa6"
+
+import ViewportWrapper from "@/components/commons/ViewportWrapper"
+import { buttonVariants } from "@/components/ui/button"
+
 import brand from "@/lib/constants/brand.json"
 
 // Common styles for reusability

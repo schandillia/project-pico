@@ -1,13 +1,17 @@
-import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import "@/app/globals.css"
-import { cn } from "@/lib/utils"
-import Navbar from "@/components/commons/Navbar"
-import brand from "@/lib/constants/brand.json"
-import { auth } from "@/auth"
+
+import type { Metadata } from "next"
 import { SessionProvider } from "next-auth/react"
-import { ThemeProvider } from "@/components/theme/theme-provider"
+
 import Footer from "@/components/commons/Footer"
+import Navbar from "@/components/commons/Navbar"
+import { ThemeProvider } from "@/components/theme/theme-provider"
+
+import brand from "@/lib/constants/brand.json"
+import { cn } from "@/lib/utils"
+
+import "@/app/globals.css"
+import { auth } from "@/auth"
 
 // Import Google font with Latin subset
 const inter = Inter({ subsets: ["latin"] })
