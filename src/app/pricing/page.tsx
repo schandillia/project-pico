@@ -24,6 +24,7 @@ export const metadata: Metadata = {
 	title: `Subscription Plans | ${brand.BRAND}`,
 	description: `Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`,
 }
+
 export default async function Page() {
 	const session = await auth()
 	const user = session?.user
