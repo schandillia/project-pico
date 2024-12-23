@@ -22,6 +22,26 @@
 	},
 	"plugins": ["react", "@typescript-eslint", "prettier"],
 	"rules": {
+		"import/order": [
+			"error",
+			{
+				"groups": [
+					"builtin",
+					"external",
+					"internal",
+					"parent",
+					"sibling",
+					"index"
+				],
+				"newlines-between": "always",
+				"alphabetize": { "order": "asc", "caseInsensitive": true }
+			}
+		],
+		"padding-line-between-statements": [
+			"error",
+			{ "blankLine": "always", "prev": "import", "next": "*" },
+			{ "blankLine": "always", "prev": "*", "next": "return" }
+		],
 		"quotes": [
 			"error",
 			"double",

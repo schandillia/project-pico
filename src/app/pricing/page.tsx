@@ -1,20 +1,20 @@
-import type { Metadata } from "next"
-import brand from "@/lib/constants/brand.json"
+import { auth } from "@/auth"
+import PageHeading from "@/components/commons/PageHeading"
 import ViewportWrapper from "@/components/commons/ViewportWrapper"
+import { buttonVariants } from "@/components/ui/button"
+import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import {
 	Tooltip,
 	TooltipContent,
 	TooltipProvider,
 	TooltipTrigger,
 } from "@/components/ui/tooltip"
+import brand from "@/lib/constants/brand.json"
+import subscriptionPlans from "@/lib/constants/subscription_plans.json"
 import { cn } from "@/lib/utils"
 import { Check, HelpCircle, Star, X } from "lucide-react"
+import type { Metadata } from "next"
 import Link from "next/link"
-import { buttonVariants } from "@/components/ui/button"
-import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import subscriptionPlans from "@/lib/constants/subscription_plans.json"
-import PageHeading from "@/components/commons/PageHeading"
-import { auth } from "@/auth"
 
 export const metadata: Metadata = {
 	title: `Subscription Plans | ${brand.BRAND}`,
