@@ -14,13 +14,15 @@ import { buttonVariants } from "@/components/ui/button"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import subscriptionPlans from "@/lib/constants/subscription_plans.json"
 import PageHeading from "@/components/commons/PageHeading"
+import { auth } from "@/auth"
 
 export const metadata: Metadata = {
 	title: `Subscription Plans | ${brand.BRAND}`,
 	description: `Read ${brand.BRAND}’s Privacy Policy to learn about the information we collect, how it’s used, and the control you have over it.`,
 }
-export default function Page() {
-	const user = "amit"
+export default async function Page() {
+	const session = await auth()
+	const user = session?.user
 
 	return (
 		<ViewportWrapper className="my-8 flex flex-col">
