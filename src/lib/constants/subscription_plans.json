@@ -46,9 +46,7 @@
 				"footnote": "Optimize tone and style for better engagement",
 				"negative": true
 			}
-		],
-		"buttonText": "Get Started",
-		"buttonVariant": "outline"
+		]
 	},
 	{
 		"plan": "Power Threader",
@@ -94,9 +92,7 @@
 				"footnote": "Optimize tone and style for better engagement",
 				"negative": true
 			}
-		],
-		"buttonText": "Upgrade to Creator",
-		"buttonVariant": "default"
+		]
 	},
 	{
 		"plan": "Thread Guru",
@@ -139,8 +135,6 @@
 				"text": "AI-assisted style check",
 				"footnote": "Optimize tone and style for better engagement"
 			}
-		],
-		"buttonText": "Upgrade to Mastermind",
-		"buttonVariant": "outline"
+		]
 	}
 ]

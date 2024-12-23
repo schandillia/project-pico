@@ -107,15 +107,18 @@ export default function Page() {
 									href={user ? "/dashboard" : "/sign-up"}
 									className={cn(
 										buttonVariants({
-											variant: "default",
+											variant:
+												index === 1
+													? "default"
+													: "outline",
 											size: "lg",
-											className:
-												"dark:text-white dark:bg-primary/80",
 										}),
+										index === 1 &&
+											"dark:text-white dark:bg-primary/80", // Apply conditionally
 										"w-full mt-auto",
 									)}
 								>
-									{item.buttonText}
+									Select
 								</Link>
 							</CardContent>
 						</Card>
