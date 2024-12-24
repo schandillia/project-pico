@@ -3,6 +3,7 @@ import { Inter } from "next/font/google"
 import type { Metadata } from "next"
 import { SessionProvider } from "next-auth/react"
 
+import CookieConsent from "@/components/CookieConsent"
 import Footer from "@/components/commons/Footer"
 import Navbar from "@/components/commons/Navbar"
 import { ThemeProvider } from "@/components/theme/theme-provider"
@@ -14,7 +15,7 @@ import "@/app/globals.css"
 import { auth } from "@/auth"
 
 // Import Google font with Latin subset
-const inter = Inter({ subsets: ["latin"] })
+const font = Inter({ subsets: ["latin"] })
 
 // Metadata for the app
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export default async function RootLayout({
 			<body
 				className={cn(
 					"min-h-screen font-sans antialiased flex flex-col", // Minimum height and font styling
-					inter.className, // Apply Inter font class
+					font.className, // Apply Google font
 				)}
 				aria-busy="false" // Indicate loading state for accessibility
 				aria-live="polite" // Inform screen readers of live updates
@@ -62,6 +63,7 @@ export default async function RootLayout({
 							{children}
 						</main>
 						<Footer />
+						<CookieConsent />
 					</ThemeProvider>
 				</SessionProvider>
 			</body>
